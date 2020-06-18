@@ -7,7 +7,7 @@ def bubble_sort (array)
     while j != array.length
       first_value = array[i]
       second_value = array[j]
-      if primer_valor > second_value
+      if first_value > second_value
         array[i] = second_value
         array[j] = first_value
         i-= 1
