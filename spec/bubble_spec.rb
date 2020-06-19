@@ -2,8 +2,7 @@ array = %w[hi hello hey]
 array2 = [4, 3, 78, 2, 0, 2]
 
 def bubble_sort(arr)
-
-  array= Array.new(arr)
+  array = Array.new(arr)
 
   (array.length - 1).times do |i|
     (array.length - 1 - i).times do |index|
@@ -14,8 +13,7 @@ def bubble_sort(arr)
 end
 
 def bubble_sort_by(arr)
-
-  array= Array.new(arr)
+  array = Array.new(arr)
 
   (array.length - 1).times do |i|
     (array.length - 1 - i).times do |index|
