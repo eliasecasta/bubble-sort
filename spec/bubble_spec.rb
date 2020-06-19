@@ -1,7 +1,10 @@
 array = %w[hi hello hey]
-array2 = [0, 2, 2, 3, 4, 78]
+array2 = [4, 3, 78, 2, 0, 2]
 
-def bubble_sort(array)
+def bubble_sort(arr)
+
+  array= Array.new(arr)
+
   (array.length - 1).times do |i|
     (array.length - 1 - i).times do |index|
       array[index], array[index + 1] = array[index + 1], array[index] if array[index] > array[index + 1]
@@ -10,7 +13,10 @@ def bubble_sort(array)
   array
 end
 
-def bubble_sort_by(array)
+def bubble_sort_by(arr)
+
+  array= Array.new(arr)
+
   (array.length - 1).times do |i|
     (array.length - 1 - i).times do |index|
       array[index], array[index + 1] = array[index + 1], array[index] if (yield array[index], array[index + 1]) >= 1
