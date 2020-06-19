@@ -11,7 +11,7 @@ def bubble_sort(array2)
 end
 
 def bubble_sort_by(array2)
-  (array.length - 1 ).times do |i|
+  (array.length - 1).times do |i|
     (array.length - 1 - i).times do |index|
       array[index], array[index + 1] = array[index + 1], array[index] if (yield array[index], array[index + 1]) >= 1
     end
