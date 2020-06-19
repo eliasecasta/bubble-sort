@@ -1,6 +1,3 @@
-array = %w[hi hello hey]
-array2 = [4, 3, 78, 2, 0, 2]
-
 def bubble_sort(arr)
   array = Array.new(arr)
 
@@ -21,10 +18,4 @@ def bubble_sort_by(arr)
     end
   end
   array
-end
-
-bubble_sort(array2)
-
-bubble_sort_by(array) do |left, right|
-  left.length - right.length
 end
