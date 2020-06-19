@@ -1,5 +1,5 @@
-array = %w[h44 he fgh jshkdal s sds]
-array2=[4,3,2,7,8,10,2,1,0,5,20,28,69]
+array = ["hi","hello","hey"]
+array2=[0,2,2,3,4,78]
 
 def bubble_sort(array)
     (array.length-1).times do |i|
@@ -12,8 +12,7 @@ def bubble_sort(array)
     array
 end
 
-<<<<<<< Updated upstream
-def bubblue_sort_by(array)
+def bubble_sort_by(array)
   (array.length - 1).times do |i|
     (array.length - 1 - i).times do |index|
       if (yield array[index], array[index + 1]) >= 1
@@ -24,29 +23,8 @@ def bubblue_sort_by(array)
   array
 end
 
-x = bubblue_sort_by(array) do |left, right|
+bubble_sort(array2)
+
+bubble_sort_by(array) do |left, right|
   left.length - right.length
 end
-
-p bubble_sort(array2)
-p x
-=======
-p bubble_sort(array)
-
-array = %w[hi hello hey rana ranita ranota jessica jessicadoble jessicax3]
-
-def bubblue_sort_by(array)
-  (array.length-1).times do |i|
-        (array.length-1-i).times do |index|
-            if array[index].length > array[index+1].length
-                array[index], array[index+1]=array[index+1],array[index]
-            end
-        end
-    end
-    yield
-end
-
-bubblue_sort_by(array) do |left, right|
-  left.length - right.length
-end
->>>>>>> Stashed changes
