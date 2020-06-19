@@ -4,7 +4,7 @@ array2 = [0, 2, 2, 3, 4, 78]
 def bubble_sort(array)
   (array.length - 1).times do |i|
     (array.length - 1 - i).times do |index|
-      array[index], array[i + 1] = array[index + 1], array[index] if array[index] > array[index + 1]
+      array[index], array[index + 1] = array[index + 1], array[index] if array[index] > array[index + 1]
     end
   end
   array
